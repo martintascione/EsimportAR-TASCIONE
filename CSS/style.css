@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oleo+Script:wght@700&family=Poppins:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    position: static;
+    top: 0;
+}
+
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #364c50;
+}
+
+
+
+
+.contenedor{
+    height: auto;
+    width 100%;
+    background-color: #ff0084;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+
+
+
+.navegacion {
+    background-color: #032b2f;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    margin: 1px;
+    width: 978px;
+}
+.navegacion img {
+    height: 80px;
+    padding: 15px
+}
+.navegacion ul {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+.navegacion li {
+    padding: 23px;
+}
+li:hover{
+    background-color: rgb(49, 197, 230);
+}
+.navegacion a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: rgb(240, 248, 255);
+}
+
+.banner {
+    height: auto;
+    background-image: url(../img/fondo-3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+.banner h1 {
+    padding: 5vw 5vw 1vw 5vw;
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+  
+}
+.banner .texto1 {
+    font-size: 40px;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner .texto2{
+    font-weight: 900;
+    line-height: 2;
+    color: #ff0084!important;
+    text-transform: uppercase!important;
+    font-size: 45px;
+    text-align: center!important;
+    padding: 2vw 12vw 2vw 12vw;
+}
+.banner .texto3{
+    font-family: Lato,sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    text-align: center!important;
+    
+}
+.banner .texto4{
+    font-weight: 900;
+    line-height: 2;
+    color: #ffffff!important;
+    text-transform: uppercase!important;
+    font-size: 25px;
+    text-align: center!important;
+    margin: 1cm;
+}
+
+.banner .texto5{
+    font-weight: 900;
+    line-height: 2;
+    color: #ffffff!important;
+    text-transform: uppercase!important;
+    font-size: 15px;
+    text-align: center!important;
+    margin: 1cm;
+}
+
+.contenedor-imagenes{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
+}
+.paso1{
+    text-align: left;
+}
+
+.paso2{
+    text-align: right;
+}
+
+.paso3{
+    text-align: left;
+}
+
+.paso4{
+    text-align: right;
+}
+
+
+.paso1 img, .paso2 img{
+    width: 40%;
+}
+ .paso2 img, .paso3 img, .paso4 img{
+    width: 40%;
+
+ }
+
+
+
+.logosempresas{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logosempresas img{
+    height: auto;
+    width:auto;
+    max-height: 100px;
+    max-width: 300px;
+    padding: 20px;
+}
+        
+.calcularenvio-container{
+    text-align: center;
+    height: 50px;
+}
+.calcularenvio{
+    text-decoration: rgb(101,160,212);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700vw;
+    border-radius: 10px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #032b2f;
+    animation: pulse 5s infinite;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+header img{
+    height: auto;
+    width:auto;
+    max-height: 100px;
+    max-width: 300px;
+    padding: 20px;
+}
+
+
+
+@media (max-width: 764px) {
+    .navegacion {
+      width: 100%;
+    }
+    .navegacion a{
+        font-size: 13px;
+    }
+
+}
+@media (max-width: 360px) {
+    .navegacion {
+        width: 100%;
+        height: 170px;
+    }
+    .navegacion a{
+        font-size: 13px;
+    }
+    .navegacion li{
+        padding: 5px;
+        text-align: center;
+    }
+    .navegacion ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .banner h1{
+        font-size: 36px;
+        padding: 0;
+    }
+    .banner .texto1{
+        font-size: 29px;
+    }
+    .banner .texto2{
+        line-height: 1.5;
+        font-size: 35px;
+        padding: 0;
+    }
+    .banner .texto4{
+        line-height: 1.5;
+    }
+    .logosempresas{
+        height: 84vh;
+        flex-wrap: wrap;
+    }
+    .logosempresas img{
+        max-height: 90px;
+    }
+}
+
+  
+@keyframes pulse {
+0% {
+    background-color: #032b2f;
+}
+100% {
+    background-color: #ff0084;
+}
+}
